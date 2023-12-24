@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car</title>
+    <link rel="stylesheet" href="style.css">
+<style>
+body {
+  background-image: linear-gradient(lightblue 60%,green 40%);
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center
+  }
+.car {
+  position: absolute;
+  width: 170px;
+  height: 90px;
+  background-color: red;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border: 1px solid black
+  }
+.car:after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 75px;
+  background-color: red;
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+  bottom: 90px;
+  border: 1px solid black;
+  border-bottom: 1px solid transparent
+  }
+.ball {
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  background-image: radial-gradient(circle at center,
+  gray,black);
+  border-radius: 50%;
+  top: 350px;
+  border: 1px solid black;
+  left: 110px
+  }
+.ball2 {
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  background-image: radial-gradient(circle at center,
+  gray,black);
+  border-radius: 50%;
+  top: 350px;
+  border: 1px solid black;
+  right: 110px
+  }
+.window {
+  position: absolute;
+  width: 78px;
+  height: 65px;
+  background: cadetblue;
+  border-radius: 3px;
+  border: 1px solid black;
+  top: 210px;
+  left: 107px
+  }
+.door {
+  position: absolute;
+  width: 81px;
+  height: 30px;
+  background-color: transparent;
+  border: 1px solid black;
+  top: 285px;
+  left: 110px
+  }
+.lock {
+  position: absolute;
+  width: 20px;
+  height: 5px;
+  background-color: black;
+  top: 290px;
+  left: 120px
+  }
+
+.lighthouse {
+  position: absolute;
+  width: 15px;
+  height: 11px;
+  background-image: radial-gradient(royalblue,yellow);
+  border-radius: 5px;
+  top: 280px;
+  right: 98px
+  }
+.lighthouse2 {
+  position: absolute;
+  width: 15px;
+  height: 11px;
+  background-image: radial-gradient(royalblue,yellow);
+  border-radius: 5px;
+  top: 279px;
+  left: 98px
+  }
+.exhaust {
+  position: absolute;
+  width: 20px;
+  height: 12px;
+  background-color: black;
+  border-radius: 3px;
+  top: 350px;
+  left: 76px
+  }
+</style>
+</head>
+<body>
+    <div class="car"></div>
+    <div class="ball"></div>
+    <div class="ball2"></div>
+    <div class="window"></div>
+    <div class="door"></div>
+    <div class="lock"></div>
+    <div class="lighthouse"></div>
+    <div class="lighthouse2"></div>
+    <div class="exhaust"></div>
+    <div class="track"></div>
+    <div class="border"></div>
+    <div class="border2"></div>
+    <div class="border3"></div>
+</body>
+</html>
