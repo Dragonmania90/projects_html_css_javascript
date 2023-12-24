@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Barra de progresso</title>
+        <meta charset="UTF-8"/>
+        <meta http-eqiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css"/>
+    </head>
+    <style>
+body {
+    background-color: #000000;
+    font-family: sans-serif
+}
+.container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column
+}
+.text {
+    color: white;
+    margin-bottom: 25px;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+.loading {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loading .line-box {
+    padding: 2px;
+    width: 40%;
+    height: 20px;
+    border: 2px solid #267591;
+    border-radius: 20px
+}
+.loading .line-box .line {
+    height: 20px;
+    border-radius: 20px;
+    background: linear-gradient(45deg,red,orangered,yellow,green
+    ,deeppink);
+    animation: loading 4s forwards cubic-bezier(0,0,0,0);
+    animation-iteration-count: infinite
+}
+@keyframes loading {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+        </style>
+        <body>
+            <div class="container">
+                <div class="text">
+                    <h1>Loading...</h1>
+            </div>
+            <div class="loading">
+                <div class="line-box">
+                 <div class="line"></div>  
+        </body>
+</html>
