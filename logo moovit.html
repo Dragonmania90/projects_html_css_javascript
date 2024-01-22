@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>logo moovit</title>
+    <link rel="stylesheet" href="styles.css">
+<style>
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box
+  }
+body {
+  background: #10;
+  display: flex;
+  justify-content: center;
+  align-items: center
+  }
+.container {
+  position: relative;
+  background-color: orangered;
+  width: 160px;
+  height: 160px;
+  border-radius: 4px
+  }
+.moovit {
+  position: relative;
+  width: 85px;
+  height: 85px;
+  background-color: #fff;
+  left: 40px;
+  top: 30px;
+  border-radius: 50% 0% 50% 50%;
+  transform: rotate(135deg)
+  }
+.eye {
+  position: relative;
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  border-radius: 50%;
+  top: 60px;
+  right: -40px
+  } 
+.eye2 {
+  position: relative;
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  border-radius: 50%;
+  top: 30px;
+  right: -15px
+  }
+.mouth {
+  position: relative;
+  width: 20px;
+  height: 3px;
+  background-color: black;
+  transform: rotate(224deg);
+  top: 30px;
+  right: -30px;
+  border-radius: 0 0 130vw 130vw
+  }
+</style>
+</head>
+<body>
+   <div class="container">
+   <div class="moovit">
+   <div class="eye"></div>
+   <div class="eye2"></div>
+   <div class="mouth"></div>
+   </div>
+   </div>
+</body>
+</html>
