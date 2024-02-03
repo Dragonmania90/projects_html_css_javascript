@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super contador</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column
+}
+section {
+    background-color: #556699;
+    padding: 14px;
+    border-radius: 2px;
+    font-family: sans-serif;
+}
+
+    </style>
+</head>
+<body>
+    <section>
+        <header>
+            <h1>Super contador</h1>
+        </header>
+    <div id="dados">
+        <p>Inicio: <input type="number" name="inicio" id="txt1"></p>
+        <p>Fim: <input type="number" name="fim" id="txtf"></p>
+        <p>Passo: <input type="number" name="passo" id="txtp"></p>
+        <p><input type="button" value="contar" onclick="contar()"></p>
+    </div>
+    <div id="res">
+        preparando a contagem...
+    </div>
+    <footer>
+        <p>Super contador</p>
+    </footer>
+    <script>
+       function contar() {
+        let ini = document.getElementById('txt1')
+        let fim = document.getElementById('txtf')
+        let passo = document.getElementById('txtp')
+        let res = document.getElementById('res')
+
+        if(ini.value.lenght == 0 || fim.value.lenght == 0 || passo.value.lenght == 0){
+            res.innerHTML = 'Impossivel contar!'
+            window.alert('[erro] digite um numero para continuar')
+        }else {
+            res.innerHTML = 'Contando: '
+            let i = Number(ini.value)
+            let f = Number(fim.value)
+            let p = Number(passo.value)
+            if (p <= 0) {
+                window.alert('passo invalido considerando passo 1')
+                p = 1
+            }
+            if (i < f) {
+                for(let c = i; c <= f; c += p) {
+                res.innerHTML += `${c} \u{1F449}`
+            }
+            }else {
+                for(let c = i;c >= f; c -= p) {
+                    res.innerHTML += `${c} \u{1f449}` 
+                }
+                res.innerHTML += `\u{1f3C1}`
+            }
+        }
+       }
+    </script>
+</body>
+</html>

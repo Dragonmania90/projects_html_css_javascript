@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake</title>
+    <link rel="stylesheet" href="styles.css">
+<style>
+body {
+  min-height: 100vh;
+  overflow: hidden;
+  background: royalblue;
+  display: flex;
+  justify-content: center;
+  align-items: center
+  }
+.snake {
+  position: absolute;
+  width: 140px;
+  height: 30px;
+  background-color: green;
+  border-radius: 9px
+  }
+.eye {
+  position: absolute;
+  background-image: radial-gradient(circle at center,black,white);
+  width: 9px;
+  height: 9px;
+  border-radius: 3px;
+  right: 130px
+  }
+.lingua {
+  position: absolute;
+  width: 35px;
+  height: 8px;
+  background-color: red;
+  left: 250px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px
+  }
+</style>
+</head>
+<body>
+  <div class="snake"></div>
+  <div class="eye"></div>
+  <div class="lingua"></div>
+</body>
+</html>
