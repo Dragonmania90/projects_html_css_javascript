@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text shadow</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box
+}
+body {
+  background: #555;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center
+  }
+.text {
+  color: black;
+  font-size: 5em;
+  font-family: sans-serif;
+  letter-spacing: 5px;
+  box-shadow: 0px 0px 15px cyan,
+  0px 0px 20px aqua,
+  0px 0px 25px cyan,
+  0px 0px 30px aqua;
+  }
+p {
+  background-image: linear-gradient(aqua,lightblue,
+  deeppink);
+  font-weight: bold;
+  font-stretch: condesed;
+  padding: 3px 3px;
+  text-shadow: 0 0 1px black;
+  animation: blur 2s linear infinite;
+  transition: 2s p
+  }
+@keyframes blur {
+  0% {
+    text-shadow: 0 0 2px black;
+    color: black
+    }
+  50% {
+    text-shadow: 0 0 3px black;
+    box-shadow: 0 0 4px gray
+    }
+  100% {
+    text-shadow: 0 0 4px gray;
+    color: gray
+    }
+  }
+</sttle>
+<body>
+   <div class="text">
+   <p>Sunning</p>
+   </div>
+</body>
+</html>
